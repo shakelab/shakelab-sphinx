@@ -14,7 +14,10 @@ release = '0.1'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = []
+import os, sys
+
+sys.path.append(os.path.abspath("./_extensions"))
+extensions = ['download_button', 'copy_button']
 
 templates_path = ['_templates']
 exclude_patterns = []
@@ -27,7 +30,7 @@ html_theme = 'furo'
 #html_theme = 'sphinx_book_theme'
 
 html_static_path = ['_static']
-html_css_files = ['custom.css']
+html_css_files = ['custom.css', 'download_button.css', 'copy_button.css']
 
 html_logo = '_static/logo/shakelab-logo-gray.png'
 

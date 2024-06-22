@@ -12,6 +12,24 @@ Classes
 Header
 ^^^^^^
 
+.. literalinclude:: ../_demos/example_script.py
+    :language: python
+    :linenos:
+
+.. code-block:: python
+    :linenos:
+
+    from shakelab.signals.analysis import StreamCollection
+
+    # Create a StreamCollection and read seismic data from a byte stream
+    byte_stream = b"..."  # Actual byte stream content
+    stream_collection = StreamCollection()
+    stream_collection.read(byte_stream, ftype='mseed', byte_order='be')
+
+.. copybutton:: ../_demos/example_script.py
+.. downloadbutton:: ../_demos/example_script.py
+
+
 Represents the header information associated with a seismic recording. It includes properties such as sampling rate, time, location, units, response, and metadata.
 
 Attributes
@@ -141,7 +159,7 @@ Methods
 - ``copy()``: Create a deep copy of the ``StreamCollection`` object.
 
 Usage Examples
---------------
+^^^^^^^^^^^^^^
 
 Creating a Record and Computing Spectrum
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -191,15 +209,3 @@ Creating a StreamCollection and Reading Data
 These examples provide a glimpse of the functionality provided by the ``shakelab.signals.analysis`` module. Refer to the documentation for more details and advanced usage.
 
 
-
-Example Section
-===============
-
-Here is an example of some Python code displayed as a console session. You can download the code using the link below.
-
-.. literalinclude:: ../_static/example_script.py
-   :language: console
-
-.. raw:: html
-
-    <a href="../_static/example_script.py" download="example_script.py">Download example_script.py</a>
