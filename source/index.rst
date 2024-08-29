@@ -8,10 +8,11 @@ Welcome to ShakeLab's documentation!
 
 .. toctree::
    :maxdepth: 2
-   :numbered:
+   :caption: Contents:
 
    installation
    signals/index
+   seismicity/index
    libutils/index
 
 

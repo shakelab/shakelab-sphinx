@@ -6,7 +6,8 @@ The ``shakelab.signals`` module provides functionality for basic waveform analys
 This is the introductory text for the "Signals" section.
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
+   :caption: Signals Submodules:
 
    base
    fourier
