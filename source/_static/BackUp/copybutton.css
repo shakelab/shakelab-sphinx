@@ -1,0 +1,45 @@
+.code-container {
+    position: relative;
+    background-color: #f7f7f7; /* Very light gray background similar to Furo template */
+    border-radius: 5px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    font-family: monospace;
+    color: #272822; /* Text color within the code box */
+}
+
+.code-container .top-bar {
+    background-color: #2c2c2c; /* Dark gray bar */
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.copy-button {
+    background-color: #2c2c2c; /* Dark gray background for the button */
+    color: #d3d3d3; /* Light gray text for the button */
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 3px;
+}
+
+.copy-button:hover {
+    background-color: #444; /* Slightly lighter gray on hover */
+}
+
+.code-container pre {
+    margin: 0;
+    padding: 10px;
+    background-color: #f7f7f7; /* Very light gray background for the code block */
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    overflow-x: auto;
+    color: #272822; /* Text color within the code block */
+}

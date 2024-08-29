@@ -1,0 +1,57 @@
+.code-container {
+    position: relative;
+    background-color: #f7f7f7; /* Light gray background */
+    border-radius: 5px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    font-family: monospace;
+    color: #272822;
+}
+
+.code-container .top-bar {
+    background-color: #003B71; /* Dark blue bar */
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.copy-button {
+    background-color: #003B71; /* Match the bar color */
+    color: #d3d3d3; /* Light gray text */
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    line-height: 1; /* Ensure the button stays on the same line */
+}
+
+.copy-button svg {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    fill: currentColor; /* Ensure the icon matches the text color */
+}
+
+.copy-button:hover {
+    background-color: #005f9e; /* Slightly lighter blue on hover */
+}
+
+.code-container pre {
+    margin: 0;
+    padding: 10px;
+    background-color: #f7f7f7; /* Light gray background */
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    overflow-x: auto;
+    color: #272822;
+}

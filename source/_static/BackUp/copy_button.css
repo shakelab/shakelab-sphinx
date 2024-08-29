@@ -1,0 +1,13 @@
+.copy-button-container {
+    overflow: auto;
+    margin: 0;
+}
+
+.copy-button {
+    float: right;
+    padding: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
