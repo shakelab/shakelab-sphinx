@@ -1,3 +1,23 @@
-h1 {
-    color: #003B71 !important;
+:root {
+  --shakelab-radius: 0.65rem;
+}
+.content {
+  line-height: 1.7;
+}
+article h1 {
+  letter-spacing: -0.025em;
+}
+article h2 {
+  margin-top: 2.3rem;
+}
+.sd-card {
+  border-radius: var(--shakelab-radius);
+  transition: border-color 150ms ease, transform 150ms ease;
+}
+.sd-card:hover {
+  border-color: var(--color-brand-primary);
+  transform: translateY(-2px);
+}
+.sd-card-title {
+  font-weight: 700;
 }
