@@ -1,30 +1,52 @@
-.. ShakeLab documentation master file, created by
-   sphinx-quickstart on Tue Dec 26 10:07:59 2023.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+ShakeLab
+========
 
-Welcome to ShakeLab's documentation!
-====================================
+**Open-source tools for seismology and earthquake engineering.**
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
-
-   installation
-   signals/index
-   seismicity/index
-   libutils/index
-
-
-**ShakeLab** is an opensource project with the goal of providing a set of free and opensource tools for seismologists dealing with most common engineering problems.
+ShakeLab is a Python library for working with seismic waveforms, metadata,
+signal processing, seismicity, ground motion, and engineering applications.
+This documentation combines practical workflows with detailed API references.
 
 .. note::
 
-   This project is still under development.
+   ShakeLab is under active development. Some interfaces are evolving in the
+   `c-develop` and `develop` branches of the source repository.
 
-Indices and tables
-==================
+Explore the documentation
+-------------------------
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+.. grid:: 2
+   :gutter: 3
+
+   .. grid-item-card:: Getting Started
+      :link: getting-started/index
+      :link-type: doc
+
+      Install ShakeLab and learn its fundamental concepts.
+
+   .. grid-item-card:: User Guide
+      :link: user-guide/index
+      :link-type: doc
+
+      Learn workflows for waveform data, signal processing, and engineering.
+
+   .. grid-item-card:: API Reference
+      :link: api-reference/index
+      :link-type: doc
+
+      Find Python interfaces and module-level documentation.
+
+   .. grid-item-card:: Contributing to ShakeLab
+      :link: contributing/index
+      :link-type: doc
+
+      Learn how to develop, test, and improve ShakeLab.
+
+.. toctree::
+   :hidden:
+   :maxdepth: 2
+
+   getting-started/index
+   user-guide/index
+   api-reference/index
+   contributing/index
