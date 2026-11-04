@@ -44,7 +44,7 @@ Explore the documentation
 
 .. toctree::
    :hidden:
-   :maxdepth: 2
+   :maxdepth: 3
 
    getting-started/index
    user-guide/index
