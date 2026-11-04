@@ -1,8 +1,21 @@
 API Reference
 =============
 
-The API Reference will document public Python interfaces and link back to the
-User Guide. Sphinx autodoc, autosummary, and napoleon are configured, but
-module pages will be added after the two development branches are reconciled.
+This section collects the existing module-level documentation while the
+public API reference is being reorganized. Some pages describe interfaces
+that are changing in the development branches; verify examples against the
+version of ShakeLab you are using.
 
-See the `ShakeLab source repository <https://github.com/shakelab/shakelab>`_.
+Existing module documentation
+-----------------------------
+
+.. toctree::
+   :maxdepth: 2
+
+   ../signals/index
+   ../seismicity/index
+   ../libutils/index
+
+The API Reference will progressively gain generated documentation for the
+public Python interfaces. See the `ShakeLab source repository
+<https://github.com/shakelab/shakelab>`_ for the current implementation.
