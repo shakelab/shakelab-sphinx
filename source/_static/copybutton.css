@@ -1,57 +1,22 @@
-.code-container {
-    position: relative;
-    background-color: #f7f7f7; /* Light gray background */
-    border-radius: 5px;
-    margin-bottom: 20px;
-    overflow: hidden;
-    font-family: monospace;
-    color: #272822;
+.highlight, .literal-block-wrapper { position: relative; }
+.shakelab-copy-button {
+  position: absolute;
+  z-index: 2;
+  right: .65rem;
+  top: .55rem;
+  padding: .25rem .6rem;
+  border: 1px solid var(--color-background-border, #ccc);
+  border-radius: .4rem;
+  background: var(--color-background-primary, #fff);
+  color: var(--color-foreground-primary, #222);
+  font: inherit;
+  font-size: .75rem;
+  cursor: pointer;
+  opacity: .88;
 }
-
-.code-container .top-bar {
-    background-color: #003B71; /* Dark blue bar */
-    color: white;
-    padding: 5px 10px;
-    font-size: 14px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+.shakelab-copy-button:hover, .shakelab-copy-button:focus-visible {
+  opacity: 1;
+  outline-offset: 2px;
+  border-color: var(--color-brand-primary, #003b71);
 }
-
-.copy-button {
-    background-color: #003B71; /* Match the bar color */
-    color: #d3d3d3; /* Light gray text */
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-    font-size: 14px;
-    border-radius: 3px;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    text-decoration: none;
-    line-height: 1; /* Ensure the button stays on the same line */
-}
-
-.copy-button svg {
-    width: 16px;
-    height: 16px;
-    margin-right: 5px;
-    fill: currentColor; /* Ensure the icon matches the text color */
-}
-
-.copy-button:hover {
-    background-color: #005f9e; /* Slightly lighter blue on hover */
-}
-
-.code-container pre {
-    margin: 0;
-    padding: 10px;
-    background-color: #f7f7f7; /* Light gray background */
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    overflow-x: auto;
-    color: #272822;
-}
+.highlight pre { padding-top: 2.1rem; }
